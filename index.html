@@ -24,6 +24,7 @@
 					<!-- Logo -->
 						<div id="logo">
 							<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
+							<br><br><br><br><br><br>
 							<h1 id="title">Aditya Rajagopal</h1>
                             <p> Software and Electronics<br>Engineer </p>
 						</div>
@@ -77,11 +78,12 @@
 								site template designed by <a href="http://html5up.net">HTML5 UP</a>.</h2>
 								<p>Ligula scelerisque justo sem accumsan diam quis<br />
                                 vitae natoque dictum sollicitudin elementum.</p> -->
-                                <p> Hi, I'm a student in my 3rd year of an MEng. Electronics and Information Engieering degree at Imperial College, London. Due to
-                                the nature of the course and various internships and projects I have done in the past, I have some experience in both high level 
+                                <p> Hello and welcome to my portfolio! At the moment, I'm a student in my 3rd year of the MEng. Electronics and Information Engieering degree at Imperial College, London. However, I was born in India, grew up in Malaysia and am currently on a 6-month placement as part of my course at a comapny called Western Geco in Norway.
+                                <br><br>
+                                Due to the nature of the course and various internships and projects I have done in the past, I have some experience in both high level 
                                 software engineering and lower level embedded programming, as well as some hardware design. Recently I have taken an interest in machine 
                                 learning applications and would like to further my skills in the field. I also help run the Game Development society at Imperial College 
-                                London, eventhough I am definitely not a regular gamer :)</p>
+                                London, even though I am definitely not a regular gamer :)</p>
 							</header>
 
 							<footer>
@@ -172,7 +174,12 @@
 								 <br><br> 
 								 Through this page, I will be looking at various features of the softcore processor IP provided by Xilinx called the MicroBlaze processor. I will also be investigating the Xilinx microprocessor IP the MicroBlaze Microprocessor System (MicroBlaze MCS). One of the benefits of using an MCS is that it has a much smaller footprint in the PL. 
 								 <br><br>
-								 <center>MORE TO COME :)</center>
+								 <center>SNEAK PEAK ON MORE TO COME :)</center>
+								 <ol>
+								 	<li>Using UARTLite from the PS</li> 
+								 	<li>Using UARTLite with the MicroBlaze</li>
+								 	<li>Communicating between the MicroBlaze and the ARM cores using on-chip memory (OCM) </li> 
+								 </ol>
 							</p>
 						</div>
 					</section>
@@ -199,6 +206,55 @@
 							<header>
 								<h2> Machine Learning </h2>
 							</header>
+							<p>
+								In my 3rd year of university, one of the modules I chose to take was called Introduction to Machine Learning. The module was a good mix between theoretical machine learning concepts and applying these concepts in practice. <br><br>
+
+								The course was split into 4 pieces of course work, each with a focus on a different aspect of machine learning. I'll breifly describe each one and provide a link to the source code on github. <br><br>
+								
+								Due to my own curiosity in the matter, I decided to do each of the projects in a different languages to compare the ease of running some ML in each. The 1st project was done in R which is widely known as a big data language, the 2nd in C++ using the Eigen linear algebra library, and the 3rd and 4th in Python using various ML libraries. <br><br>
+
+								The projects are listed in order of what I found most interesting.
+							</p>
+
+							<header> <h3> Collaborative Filtering </h3> </header> 
+							<p>
+								This assignment was by far my favourite one of the 4. The project essentially emulated the famous Netflix Challenge, which asked software engineers to come up with an algorithm that used users' past ratings of movies and best predicted their ratings for movies they haven't watched.  <br><br>
+
+								The price winning submission used an algorithm called collaborative filtering along with other advanced ML concepts. The way this algorithm works is discussed in far more detail in the report found in Section 3.4 of the report in the link below. However, in short collaborative filtering learns not only the optimal classifier, but also the best features to use for classification. <br><br>
+
+								Other interesting parts of this project was using cross validation to choose the number of features to learn on and the regularisation parameter in the stochastic gradient descent algorithm. Doing a large amount of cross validation was extremely resource intensive and took a long time, hence this inspired the use of multi-threading in the code in the following project. <br><br>
+
+								This project was done in python, but the algorithms were still coded from scratch rather than using library versions of the algorithms. <br><br>
+
+								Here's a link to the report and source code <a href="https://github.com/adityarajagopal/ML-CW3"> Collaborative_Filtering </a>
+							</p>
+
+							<header> <h3> Support Vector Machines </h3> </header> 
+							<p>
+								This project looked at SVMs to classify handwriting data as well as the effect of Principal Component Analysis (PCA). Details and discussion on both of these topics are provided in the report below. <br><br>
+
+								Here's a link to the assignment, report and source code <a href="https://github.com/adityarajagopal/ML-CW4"> SVM </a>
+							</p>
+							
+							<header> <h3> The Perceptron Algorithm </h3> </header> 
+							<p>
+								This assignment focused on various implementations of the perceptron algorithm for linear classification. It was a good introduction to ML as the algorithms could be implemented from scratch without using libraries, hence giving a better feel for the way more complex libraries are implmeneted. <br><br> 
+
+								It was fun to code it in R and the language provided good run times for matrix operations, however there was no particular syntactical benefit or runtime benefit over other similar languages such as Matlab. <br><br> 
+
+								Here's a link to the assignment, report and source code <a href="https://github.com/adityarajagopal/ML-CW1"> ML_Perceptron </a>
+							</p>
+
+							<header> <h3> SRM and ERM </h3> </header> 
+							<p>
+								This assignment focused on the difference between empirical risk minimisation and structural risk minimisation. A more detailed analysis of the difference can be found in Section 5.2 of the report on the link below. In short, ERM works by minimising the training error, i.e. it results in the classifier that has the lowest training error. However, this hypothesis may be skewed by overfitting and hence resulting in poor test case performance. On the other hand SRM aims to account for this by assigning a penalty to each hypothesis class and selecting a hypothesis class that may not have the lowest training error, but would perform the best on test sets. <br><br>
+
+								This project was done in C++ using th Eigen library, and as I soon realised, for the short time scale and the prototyping nature of university courseworks, this language was far to precise and slow to code in. So even though I would like to do more ML projects in the future in C++, I will leave that to a final implementation and use other interpreted languages for fast prototyping. <br><br> 
+
+								Here's a link to the report and source code <a href="https://github.com/adityarajagopal/ML-CW2"> SRM_and_ERM </a>
+							</p>
+
+
 						</div>
 					</section>
 
