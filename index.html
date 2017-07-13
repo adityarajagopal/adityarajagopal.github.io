@@ -107,6 +107,7 @@
 							</p>
 
 							<div class="row">
+								
 								<div class="4u 12u$(mobile)">
 									<article class="item">
 										<nav id="nav">
@@ -125,6 +126,7 @@
 										</header>
 									</article>
 								</div>
+								
 								<div class="4u 12u$(mobile)">
 									<article class="item">
 										<nav id="nav">
@@ -142,17 +144,30 @@
 											<h3>Microblaze Soft Core Processor</h3>
 										</header>
 									</article>
+									<article class="item">
+										<nav id="nav">
+											<a href="#FPGAFaceDetection" class="image fit"><img src="images/fd.jpg" alt="" /></a>
+										</nav>
+										<header>
+											<h3>Face Detection on FPGA</h3>
+										</header>
+									</article>
 									</article>
 								</div>
+								
 								<div class="4u$ 12u$(mobile)">
 									<article class="item">
-										<a href="#ML" class="image fit"><img src="images/ml.jpg" alt="" /></a>
+										<nav id="nav">
+											<a href="#ML" class="image fit"><img src="images/ml.jpg" alt="" /></a>
+										</nav>
 										<header>
 											<h3>Machine Learning</h3>
 										</header>
 									</article>
 									<article class="item">
-										<a href="#NC" class="image fit"><img src="images/nc.png" alt="" /></a>
+										<nav id="nav">
+											<a href="#NC" class="image fit"><img src="images/nc.png" alt="" /></a>
+										</nav>
 										<header>
 											<h3>Nature's Call (2D side scroller)</h3>
 										</header>
@@ -267,10 +282,11 @@
 							<p>
 								During my second year of university, a group of friends and I founded Imperial College's Game Development society. It was started so more people get interested in coding as a fun thing to do and has steadily grown over the last year and a half. It started off intially as just a few of us who decided to put together a game, but now has about 10-20 regular members who turn up to our weekly meetings and are working on new ideas for games. <br><br>
 
-								Here's a link to the source code <a href="https://github.com/adityarajagopal/NaturesCall"> Nature's Call </a> <br><br>
+								Here's a link to the report and source code <a href="https://github.com/adityarajagopal/NaturesCall"> Nature's Call </a> <br><br>
 
 								The README has a description of the controls and a link to all the asset files. <br><br>
 
+								Here's a downloadable link to a zip folder containing the executable for the game on windows <a href="http://adityarajagopal.github.io/assets/Nature's Call.zip"> Nature's_Call_windows </a> <br><br>
 							</p>
 						</div>
 					</section>
@@ -302,6 +318,23 @@
 								This project involved creating an emulator for a MIPS cpu in C++. The source code along with details of which instructions the emulator executes can be found at <a href="https://github.com/adityarajagopal/MIPS-Emulator"> MIPSEmulator</a>. 
 							</p>
 							
+						</div>
+					</section>
+
+					<section id="FPGAFaceDetection" class="three">
+						<div class="container">
+							<header>
+								<h2>Fpga based Face Detection</h2>
+							</header>
+							<p>
+							Towards the end of my first year at university, we had to do a project that involved processing a video stream in real time on an FPGA, i.e. the throughput of system had to be 1 so for every pixel input from the video camera, there was one pixel output onto a screen. <br><br>
+
+							A classmate of mine and I decided to task ourselves with the ambitious project of detecting faces on a video screen. After planning the project, we decided to implement it such that if we used a mouse to hover a box over different parts of the video, the box would go green when there was a face within it. <br><br> 
+
+							Although not a roaring success, the video below is what we managed to get done by the end of about 5 weeks. The video is coloured in black and white as part of the project involved deciding if each pixel was a skin coloured pixel or not. So all the white pixels are what the algorithm thought were skin coloured pixels and the black ones that weren't. <br><br>
+							</p>
+							
+							<iframe width="630" height="472.5" src="https://www.youtube.com/embed/e0mKA2tfueU"></iframe>
 						</div>
 					</section>
 
