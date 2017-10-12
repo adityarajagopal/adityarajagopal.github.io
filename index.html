@@ -191,13 +191,13 @@
 								 <br><br>
 								 One of the benefits of having this tight coupling between the PS and PL is that various peripheral tasks could be offloaded onto the PL by instantiating a softcore processor on it. This makes it possible to run a much larger process with an OS on the PS, and then have smaller baremetal tasks run on various softcore processors instantiated on the PL, instead of using multithreading on the hardcore processors. 
 								 <br><br> 
-								 Through this page, I will be looking at various features of the softcore processor IP provided by Xilinx called the MicroBlaze processor. I will also be investigating the Xilinx microprocessor IP the MicroBlaze Microprocessor System (MicroBlaze MCS). One of the benefits of using an MCS is that it has a much smaller footprint in the PL. 
+								 As part of the project I looked at the following aspects of designing with the MicroBlaze softcore processor. 
 								 <br><br>
-								 <center>SNEAK PEAK ON MORE TO COME :)</center>
 								 <ol>
-								 	<li>Using UARTLite from the PS</li> 
-								 	<li>Using UARTLite with the MicroBlaze</li>
 								 	<li>Communicating between the MicroBlaze and the ARM cores using on-chip memory (OCM) </li> 
+								 	<li>Running the instructions on the MicroBlaze using only BRAM present in the FPGA and not external DRAM </li>
+								 	<li>Single and multiple clock designs in order to speed up processing carried out on the MicroBlaze</li>
+								 	<li>Comparison of designing with MicroBlaze vs designing with VHDL</li>
 								 </ol>
 							</p>
 						</div>
